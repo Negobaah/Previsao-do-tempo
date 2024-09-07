@@ -1,81 +1,86 @@
+/* Redefine estilos padrão para todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e border não aumentem a largura/altura */
+  font-family: 'Open Sans', sans-serif; /* Define a fonte padrão */
 }
 
+/* Estilos para o corpo da página */
 body {
-    background-image: url("https://source.unsplash.com/1600x900/?landscape");
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover; /* Imagem de fundo preenche toda a área */
+  height: 100vh; /* Altura da viewport (100% da altura da janela) */
+  width: 100vw; /* Largura da viewport (100% da largura da janela) */
+  display: flex;
+  align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+  justify-content: center; /* Alinha o conteúdo horizontalmente ao centro */
 }
 
+/* Estilos para o container principal */
 .caixa-maior {
-    background-color: #000000;
-    opacity: 0.8;
-    width: 95%;
-    max-width: 450px;
-    border-radius: 25px;
-    padding: 20px;
-
+  background-color: #000000; /* Fundo preto */
+  opacity: 0.8; /* Transparência de 80% */
+  width: 95%; /* Largura: 95% da viewport */
+  max-width: 450px; /* Largura máxima: 450px */
+  border-radius: 25px; /* Bordas arredondadas com raio de 25px */
+  padding: 20px; /* Espaçamento interno de 20px */
 }
 
+/* Estilos para o ícone de lupa */
 .lupa {
-    height: 22px;
-    width: 22px;
-    font-size: 34px;
+  height: 22px;
+  width: 22px;
+  font-size: 34px; /* Tamanho da fonte do ícone */
 }
 
+/* Estilos para o botão de pesquisa */
 button {
-    border: none;
-    padding: 10px;
-    background-color: #adad9f;
-    cursor: pointer;
-    border-radius: 50%;
-    float: right;
-
+  border: none;
+  padding: 10px;
+  background-color: #adad9f; /* Cor de fundo cinza claro */
+  cursor: pointer; /* Muda o cursor para mãozinha ao passar o mouse */
+  border-radius: 50%; /* Botão circular */
+  float: right; /* Posiciona o botão à direita */
 }
 
+/* Estilo do botão ao passar o mouse */
 button:hover {
-    background-color: gray;
+  background-color: gray; /* Cor de fundo cinza ao passar o mouse */
 }
 
+/* Estilos para o campo de entrada */
 input {
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #adad9f;
-    color: rgb(15, 15, 15);
-    width: calc(100%-100px);
-    font-size: 24px;
-
+  border: none;
+  outline: none; /* Remove o contorno ao focar o campo */
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 10px;
+  background-color: #adad9f; /* Cor de fundo cinza claro */
+  color: rgb(15, 15, 15); /* Cor do texto preta */
+  width: calc(100% - 100px); /* Largura: 100% do container menos 100px (para caber o botão) */
+  font-size: 24px;
 }
 
+/* Estilos para a seção de informações climáticas */
 .caixa-media {
-    margin-top: 30px;
+  margin-top: 30px; /* Espaçamento superior de 30px */
 }
 
+/* Estilos para o texto da cidade */
 .cidade {
-    color: #ffffff;
-    font-size: 28px;
-
+  color: #ffffff; /* Cor do texto branco */
+  font-size: 28px;
 }
 
+/* Estilos para a temperatura */
 .temp {
-    color: #ffffff;
-    margin-top: 30px;
-    font-size: 30px;
+  color: #ffffff; /* Cor do texto branco */
+  margin-top: 30px; /* Espaçamento superior de 30px */
+  font-size: 30px;
 }
 
+/* Estilos para a umidade */
 .umidade {
-    color: #ffffff;
-    margin-top: 30px;
+  color: #ffffff; /* Cor do texto branco */
+  margin-top: 30px; /* Espaçamento superior de 30px */
 }
